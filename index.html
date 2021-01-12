@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин "Интерьер"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__row header-row header-row--top">
+            <div class="header__container header-container header-container--top">
+                <nav class="header__main-menu-nav">
+                    <ul class="header__main-menu main-menu">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Доставка и оплата</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Материалы</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Наши работы</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__order-call order-call">
+                    <img src="img/order-call-img.svg" alt="" class="order-call__img" width="16" height="16">
+                    <a href="#" class="order-call__btn">Заказать звонок или написать нам</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__row header-row header-row--middle">
+            <div class="header__container header-container header-container--middle">
+                <a class="header__logo logo">
+                    <img src="img/logo.svg" alt="Логотип" class="logo__img" width="42" height="47">
+                    <div class="logo__text">Интерьер<br>
+                        Мебель</div>
+                    <div class="logo__label add-font">Экологичная мебель из натурального дерева</div>
+                </a>
+                <form action="" class="header__search search">
+                    <input type="search" class="search__input" placeholder="Что вы ищете?">
+                    <img src="img/search.svg" alt="" class="search__img" width="24" height="24">
+                </form>
+                <div class="header__phone phone">
+                    <div class="phone-item"><span class="phone-item__element">8 (999) </span>123-45-67</div>
+                    <div class="phone-item"><span class="phone-item__element">8 (999) </span>123-45-67</div>
+                </div>
+                <div class="header__counter counter">
+                    <a href="#" class="counter__link counter-link counter-link--heart">
+                        <img src="img/heart.svg" alt="" class="counter__img" width="36" height="36">
+                        <div class="counter__element counter-element counter-element--heart">0</div>
+                        <div class="counter__label">Понравилось</div>
+                    </a>
+                    <a href="#" class="counter__link counter-link counter-link--cart">
+                        <img src="img/cart.svg" alt="" class="counter__img" width="36" height="36">
+                        <div class="counter__element counter-element counter-element--cart">0</div>
+                        <div class="counter__label">Корзина</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__row header-row header-row--bottom">
+            <div class="header__container header-container header-container--bottom">
+                <nav class="header__catalog-menu catalog-menu">
+                    <ul class="catalog-menu__list">
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link">Спальные комплекты</a>
+                        </li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Гостинные</a></li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Прихожие</a></li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Столы и стулья</a></li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Кровати</a></li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Матрасы</a></li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Комоды</a></li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Тумбы</a></li>
+                        <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">Кухни</a></li>
+                        <li class="catalog-menu__item">
+                            <a href="#" class="catalog-menu__link catalog-link catalog-link--sale">РАСПРОДАЖА</a>
+                        </li>
+                    </ul>
+                    <button class="catalog-menu__btn catalog-btn"></button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-page">
+        <div class="slider">
+            <img src="img/slider-1.jpg" alt="Скидка 5%" class="slider__img" width="1360" height="300">
+        </div>
+
+        <section class="collections center-block">
+            <div class="title-container">
+                <h2 class="collections__title title--main-page">Коллекции</h2>
+            </div>
+            <div class="collections__block collections-block">
+                <a href="#" class="collections-block__item collections-item collections-item--big">
+                    <img src="img/collections-verdi-big.jpg" alt="Серия Верди" class="collections-item__img" width="546"
+                        height="375">
+                    <h3 class="collections-item__label collections-label collections-label--big">Серия Верди</h3>
+                </a>
+                <a href="#" class="collections-block__item collections-item">
+                    <img src="img/collections-paola.jpg" alt="Серия Паола" class="collections-item__img" width="255"
+                        height="175">
+                    <h3 class="collections-item__label collections-label">Серия Паола</h3>
+                </a>
+                <a href="#" class="collections-block__item collections-item">
+                    <img src="img/collections-avinuon.jpg" alt="Серия Авиньон" class="collections-item__img" width="255"
+                        height="175">
+                    <h3 class="collections-item__label collections-label">Серия Авиньон</h3>
+                </a>
+                <a href="#" class="collections-block__item collections-item">
+                    <img src="img/collections-milana.jpg" alt="Серия Милана" class="collections-item__img" width="255"
+                        height="175">
+                    <h3 class="collections-item__label collections-label">Серия Милана</h3>
+                </a>
+                <a href="#" class="collections-block__item collections-item">
+                    <img src="img/collections-bali.jpg" alt="Серия Бали" class="collections-item__img" width="255"
+                        height="175">
+                    <h3 class="collections-item__label collections-label">Серия Бали</h3>
+                </a>
+                <a href="#" class="collections-block__item collections-item">
+                    <img src="img/collections-okaeri.jpg" alt="Серия OKAERI" class="collections-item__img" width="255"
+                        height="175">
+                    <h3 class="collections-item__label collections-label">Серия OKAERI</h3>
+                </a>
+                <a href="#" class="collections-block__item collections-item">
+                    <img src="img/collections-lirona.jpg" alt="Серия LIRONA" class="collections-item__img" width="255"
+                        height="175">
+                    <h3 class="collections-item__label collections-label">Серия LIRONA</h3>
+                </a>
+                <a href="#" class="collections-block__item collections-item">
+                    <img src="img/collections-laura.jpg" alt="Серия LAURA" class="collections-item__img" width="255"
+                        height="175">
+                    <h3 class="collections-item__label collections-label">Серия LAURA</h3>
+                </a>
+                <a href="#" class="collections-block__item collections-item">
+                    <img src="img/collections-malta.jpg" alt="Серия Мальта" class="collections-item__img" width="255"
+                        height="175">
+                    <h3 class="collections-item__label collections-label">Серия Мальта</h3>
+                </a>
+            </div>
+            <div class="link-container">
+                <a href="#" class="collections__link link--main-page">Все коллекции ></a>
+            </div>
+        </section>
+
+        <section class="popular center-block">
+            <div class="title-container">
+                <h2 class="popular__title title--main-page">Популярные разделы</h2>
+            </div>
+            <div class="popular__block popular-block">
+                <a href="#" class="popular-block__item popular-item">
+                    <img src="img/popular-bed.jpg" alt="Кровати" class="popular-item__img" width="180" height="160">
+                    <h3 class="popular-item__label">Кровати</h3>
+                </a>
+                <a href="#" class="popular-block__item popular-item">
+                    <img src="img/popular-cupboard.jpg" alt="Шкафы" class="popular-item__img" width="180" height="160">
+                    <h3 class="popular-item__label">Шкафы</h3>
+                </a>
+                <a href="#" class="popular-block__item popular-item">
+                    <img src="img/popular-commode.jpg" alt="Комоды" class="popular-item__img" width="180" height="160">
+                    <h3 class="popular-item__label">Комоды</h3>
+                </a>
+                <a href="#" class="popular-block__item popular-item">
+                    <img src="img/popular-mattress.jpg" alt="Матрасы" class="popular-item__img" width="180"
+                        height="160">
+                    <h3 class="popular-item__label">Матрасы</h3>
+                </a>
+            </div>
+            <div class="link-container">
+                <a href="#" class="popular__link link--main-page">Перейти в каталог ></a>
+            </div>
+        </section>
+
+        <section class="products products--hit center-block">
+            <div class="title-container">
+                <h2 class="products__title title--main-page">Хиты продаж</h2>
+            </div>
+            <div class="products__wrapper">
+                <article class="products__item products-item">
+                    <a href="#" class="products-item__link">
+                        <img src="img/products-item.jpg" alt="Кровать" class="products-item__img" width="215"
+                            height="159">
+                        <h3 class="products-item__name">Кровать двуспальная Лондон</h3>
+                    </a>
+                    <div class="products-item__price products-price products-price--old">20 368 ₽</div>
+                    <div class="products-item__price products-price">
+                        <span class="products-price__element">от</span>
+                        10 368 ₽
+                    </div>
+                    <button class="products-item__cart products-cart">
+                        <span class="products-cart__text">В корзину</span>
+                    </button>
+                    <div class="products-item__modification product-modification">
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material product-modification__material--title">Материал
+                            </div>
+                            <div class="product-modification__price product-modification__price--title">Цена</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-pine.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Сосна
+                            </div>
+                            <div class="product-modification__price add-font">10 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-birch.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Берёза
+                            </div>
+                            <div class="product-modification__price add-font">15 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-beech.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Бук
+                            </div>
+                            <div class="product-modification__price add-font">20 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-oak.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Дуб
+                            </div>
+                            <div class="product-modification__price add-font">25 368 ₽</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="products__item products-item">
+                    <a href="#" class="products-item__link">
+                        <img src="img/products-item.jpg" alt="Кровать" class="products-item__img" width="215"
+                            height="159">
+                        <h3 class="products-item__name">Кровать двуспальная Лондон</h3>
+                    </a>
+                    <div class="products-item__price products-price products-price--old">20 368 ₽</div>
+                    <div class="products-item__price products-price">
+                        <span class="products-price__element">от</span>
+                        10 368 ₽
+                    </div>
+                    <button class="products-item__cart products-cart">
+                        <span class="products-cart__text">В корзину</span>
+                    </button>
+                    <div class="products-item__modification product-modification">
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material product-modification__material--title">Материал
+                            </div>
+                            <div class="product-modification__price product-modification__price--title">Цена</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-pine.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Сосна
+                            </div>
+                            <div class="product-modification__price add-font">10 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-birch.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Берёза
+                            </div>
+                            <div class="product-modification__price add-font">15 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-beech.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Бук
+                            </div>
+                            <div class="product-modification__price add-font">20 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-oak.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Дуб
+                            </div>
+                            <div class="product-modification__price add-font">25 368 ₽</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="products__item products-item">
+                    <a href="#" class="products-item__link">
+                        <img src="img/products-item.jpg" alt="Кровать" class="products-item__img" width="215"
+                            height="159">
+                        <h3 class="products-item__name">Кровать двуспальная Лондон</h3>
+                    </a>
+                    <div class="products-item__price products-price products-price--old">20 368 ₽</div>
+                    <div class="products-item__price products-price">
+                        <span class="products-price__element">от</span>
+                        10 368 ₽
+                    </div>
+                    <button class="products-item__cart products-cart">
+                        <span class="products-cart__text">В корзину</span>
+                    </button>
+                    <div class="products-item__modification product-modification">
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material product-modification__material--title">Материал
+                            </div>
+                            <div class="product-modification__price product-modification__price--title">Цена</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-pine.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Сосна
+                            </div>
+                            <div class="product-modification__price add-font">10 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-birch.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Берёза
+                            </div>
+                            <div class="product-modification__price add-font">15 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-beech.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Бук
+                            </div>
+                            <div class="product-modification__price add-font">20 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-oak.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Дуб
+                            </div>
+                            <div class="product-modification__price add-font">25 368 ₽</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="products__item products-item">
+                    <a href="#" class="products-item__link">
+                        <img src="img/products-item.jpg" alt="Кровать" class="products-item__img" width="215"
+                            height="159">
+                        <h3 class="products-item__name">Кровать двуспальная Лондон</h3>
+                    </a>
+                    <div class="products-item__price products-price products-price--old">20 368 ₽</div>
+                    <div class="products-item__price products-price">
+                        <span class="products-price__element">от</span>
+                        10 368 ₽
+                    </div>
+                    <button class="products-item__cart products-cart">
+                        <span class="products-cart__text">В корзину</span>
+                    </button>
+                    <div class="products-item__modification product-modification">
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material product-modification__material--title">Материал
+                            </div>
+                            <div class="product-modification__price product-modification__price--title">Цена</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-pine.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Сосна
+                            </div>
+                            <div class="product-modification__price add-font">10 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-birch.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Берёза
+                            </div>
+                            <div class="product-modification__price add-font">15 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-beech.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Бук
+                            </div>
+                            <div class="product-modification__price add-font">20 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-oak.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Дуб
+                            </div>
+                            <div class="product-modification__price add-font">25 368 ₽</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="banner">
+            <img alt="" class="banner__img" width="1140">
+            <p class="banner__text">Мини-баннер с новинками</p>
+        </div>
+
+        <section class="products products--new center-block">
+            <div class="title-container">
+                <h2 class="products__title title--main-page">Новинки</h2>
+            </div>
+            <div class="products__wrapper">
+                <article class="products__item products-item">
+                    <a href="#" class="products-item__link">
+                        <img src="img/products-item.jpg" alt="Кровать" class="products-item__img" width="215"
+                            height="159">
+                        <h3 class="products-item__name">Кровать двуспальная Лондон</h3>
+                    </a>
+                    <div class="products-item__price products-price products-price--old">20 368 ₽</div>
+                    <div class="products-item__price products-price">
+                        <span class="products-price__element">от</span>
+                        10 368 ₽
+                    </div>
+                    <button class="products-item__cart products-cart">
+                        <span class="products-cart__text">В корзину</span>
+                    </button>
+                    <div class="products-item__modification product-modification">
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material product-modification__material--title">Материал
+                            </div>
+                            <div class="product-modification__price product-modification__price--title">Цена</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-pine.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Сосна
+                            </div>
+                            <div class="product-modification__price add-font">10 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-birch.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Берёза
+                            </div>
+                            <div class="product-modification__price add-font">15 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-beech.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Бук
+                            </div>
+                            <div class="product-modification__price add-font">20 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-oak.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Дуб
+                            </div>
+                            <div class="product-modification__price add-font">25 368 ₽</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="products__item products-item">
+                    <a href="#" class="products-item__link">
+                        <img src="img/products-item.jpg" alt="Кровать" class="products-item__img" width="215"
+                            height="159">
+                        <h3 class="products-item__name">Кровать двуспальная Лондон</h3>
+                    </a>
+                    <div class="products-item__price products-price products-price--old">20 368 ₽</div>
+                    <div class="products-item__price products-price">
+                        <span class="products-price__element">от</span>
+                        10 368 ₽
+                    </div>
+                    <button class="products-item__cart products-cart">
+                        <span class="products-cart__text">В корзину</span>
+                    </button>
+                    <div class="products-item__modification product-modification">
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material product-modification__material--title">Материал
+                            </div>
+                            <div class="product-modification__price product-modification__price--title">Цена</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-pine.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Сосна
+                            </div>
+                            <div class="product-modification__price add-font">10 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-birch.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Берёза
+                            </div>
+                            <div class="product-modification__price add-font">15 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-beech.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Бук
+                            </div>
+                            <div class="product-modification__price add-font">20 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-oak.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Дуб
+                            </div>
+                            <div class="product-modification__price add-font">25 368 ₽</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="products__item products-item">
+                    <a href="#" class="products-item__link">
+                        <img src="img/products-item.jpg" alt="Кровать" class="products-item__img" width="215"
+                            height="159">
+                        <h3 class="products-item__name">Кровать двуспальная Лондон</h3>
+                    </a>
+                    <div class="products-item__price products-price products-price--old">20 368 ₽</div>
+                    <div class="products-item__price products-price">
+                        <span class="products-price__element">от</span>
+                        10 368 ₽
+                    </div>
+                    <button class="products-item__cart products-cart">
+                        <span class="products-cart__text">В корзину</span>
+                    </button>
+                    <div class="products-item__modification product-modification">
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material product-modification__material--title">Материал
+                            </div>
+                            <div class="product-modification__price product-modification__price--title">Цена</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-pine.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Сосна
+                            </div>
+                            <div class="product-modification__price add-font">10 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-birch.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Берёза
+                            </div>
+                            <div class="product-modification__price add-font">15 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-beech.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Бук
+                            </div>
+                            <div class="product-modification__price add-font">20 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-oak.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Дуб
+                            </div>
+                            <div class="product-modification__price add-font">25 368 ₽</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="products__item products-item">
+                    <a href="#" class="products-item__link">
+                        <img src="img/products-item.jpg" alt="Кровать" class="products-item__img" width="215"
+                            height="159">
+                        <h3 class="products-item__name">Кровать двуспальная Лондон</h3>
+                    </a>
+                    <div class="products-item__price products-price products-price--old">20 368 ₽</div>
+                    <div class="products-item__price products-price">
+                        <span class="products-price__element">от</span>
+                        10 368 ₽
+                    </div>
+                    <button class="products-item__cart products-cart">
+                        <span class="products-cart__text">В корзину</span>
+                    </button>
+                    <div class="products-item__modification product-modification">
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material product-modification__material--title">Материал
+                            </div>
+                            <div class="product-modification__price product-modification__price--title">Цена</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-pine.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Сосна
+                            </div>
+                            <div class="product-modification__price add-font">10 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-birch.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Берёза
+                            </div>
+                            <div class="product-modification__price add-font">15 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-beech.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Бук
+                            </div>
+                            <div class="product-modification__price add-font">20 368 ₽</div>
+                        </div>
+                        <div class="product-modification__wrapper">
+                            <div class="product-modification__material add-font">
+                                <img src="img/production-modification-oak.jpg" alt="" width="14" height="14"
+                                    class="product-modification__material--img">
+                                Дуб
+                            </div>
+                            <div class="product-modification__price add-font">25 368 ₽</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="advantages__container center-block">
+                <div class="advantages__item advantages-item">
+                    <img src="img/advantages-1000.svg" alt="" width="156" height="80" class="advantages-item__img">
+                    <div class="advantages-item__text">Ассортимент более 1000 наименований</div>
+                </div>
+                <div class="advantages__item advantages-item">
+                    <img src="img/advantages-seeding.svg" alt="" width="90" height="89" class="advantages-item__img">
+                    <div class="advantages-item__text">Мебель из массива безопасна и имеет долгий срок службы</div>
+                </div>
+                <div class="advantages__item advantages-item">
+                    <img src="img/advantages-shield.svg" alt="" width="89" height="89" class="advantages-item__img">
+                    <div class="advantages-item__text">Гарантия от 1 года, так как уверены в качестве продукции</div>
+                </div>
+                <div class="advantages__item advantages-item">
+                    <img src="img/advantages-gear.svg" alt="" width="89" height="89" class="advantages-item__img">
+                    <div class="advantages-item__text">Выбор цвета и размера под Ваш вкус по таблице RAL</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us center-block">
+            <div class="about-us__img-container">
+                <img src="img/about-us.jpg" alt="" width="555" height="439" class="about-us__img">
+            </div>
+            <div class="about-us__text-container">
+                <h3 class="about-us__title">Почему выбирают нас?</h3>
+                <p class="about-us__text add-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                    convallis
+                    nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam. Morbi
+                    pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus, id dignissim arcu. Integer aliquet
+                    arcu a dignissim mollis. Donec arcu turpis, pellentesque eu porta eget, fermentum sagittis eros.
+                    Praesent id quam nec eros mollis tristique eu cursus nulla. Suspendisse potenti. Vivamus tincidunt
+                    ligula ex, vel auctor turpis ornare quis. Sed imperdiet interdum posuere.</p>
+                <p class="about-us__text add-font">Cras id diam ac mauris vulputate finibus ut a nibh. Aliquam facilisis
+                    mauris
+                    ut tincidunt gravida. Praesent volutpat eros at elit imperdiet cursus. Quisque ac rhoncus tortor.
+                    Maecenas pulvinar pellentesque ligula vel dapibus.</p>
+            </div>
+        </section>
+
+        <section class="reviews center-block">
+            <div class="title-container">
+                <h2 class="reviews__title title--main-page">Отзывы</h2>
+            </div>
+            <div class="reviews__wrapper">
+                <article class="reviews__item reviews-item">
+                    <div class="reviews-item__product reviews-product">
+                        <img src="img/reviews-product.jpg" alt="Кровать" class="reviews-product__img" width="150"
+                            height="105">
+                        <h3 class="reviews-product__name">Кровать двуспальная Лондон</h3>
+                        <div class="reviews-product__price reviews-product__price--old">20 368 ₽</div>
+                        <div class="reviews-product__price">
+                            <span class="reviews-product__price--element">от</span>
+                            10 368 ₽
+                        </div>
+                    </div>
+                    <p class="reviews-item__text add-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer
+                        convallis nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam.
+                        Morbi pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus, id dignissim arcu. Integer
+                        aliquet arcu a dignissim mollis.</p>
+                    <p class="reviews-item__customer">Алексей Н.</p>
+                </article>
+                <article class="reviews__item reviews-item">
+                    <div class="reviews-item__product reviews-product">
+                        <img src="img/reviews-product.jpg" alt="Кровать" class="reviews-product__img" width="150"
+                            height="105">
+                        <h3 class="reviews-product__name">Кровать двуспальная Лондон</h3>
+                        <div class="reviews-product__price reviews-product__price--old">20 368 ₽</div>
+                        <div class="reviews-product__price">
+                            <span class="reviews-product__price--element">от</span>
+                            10 368 ₽
+                        </div>
+                    </div>
+                    <p class="reviews-item__text add-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer
+                        convallis nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam.
+                        Morbi pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus, id dignissim arcu. Integer
+                        aliquet arcu a dignissim mollis.</p>
+                    <p class="reviews-item__customer">Николай С.</p>
+                </article>
+                <article class="reviews__item reviews-item">
+                    <div class="reviews-item__product reviews-product">
+                        <img src="img/reviews-product.jpg" alt="Кровать" class="reviews-product__img" width="150"
+                            height="105">
+                        <h3 class="reviews-product__name">Кровать двуспальная Лондон</h3>
+                        <div class="reviews-product__price reviews-product__price--old">20 368 ₽</div>
+                        <div class="reviews-product__price">
+                            <span class="reviews-product__price--element">от</span>
+                            10 368 ₽
+                        </div>
+                    </div>
+                    <p class="reviews-item__text add-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer
+                        convallis nisl euismod euismod pharetra. Duis molestie egestas luctus. Donec nec efficitur quam.
+                        Morbi pellentesque euismod nisi sed laoreet. Nulla ac pulvinar lacus, id dignissim arcu. Integer
+                        aliquet arcu a dignissim mollis.</p>
+                    <p class="reviews-item__customer">Karina</p>
+                </article>
+            </div>
+            <div class="link-container">
+                <a href="#" class="reviews__link link--main-page">Отзывы ></a>
+            </div>
+        </section>
+
+        <section class="proects">
+            <div class="title-container__proects title-container">
+                <h2 class="proects__title title--main-page">Наши работы</h2>
+            </div>
+            <div class="proects__link-container link-container">
+                <a href="#" class="proects__link link--main-page">Все работы ></a>
+            </div>
+            <div class="proects__wrapper">
+                <div class="proects__item proects-item">
+                    <img src="img/proects-1.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                </div>
+                <div class="proects__item proects-item">
+                    <img src="img/proects-2.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                </div>
+                <div class="proects__item proects-item">
+                    <img src="img/proects-3.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                </div>
+                <div class="proects__item proects-item">
+                    <img src="img/proects-4.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                </div>
+                <div class="proects__item proects-item">
+                    <img src="img/proects-5.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                </div>
+                <div class="proects__item proects-item">
+                    <img src="img/proects-6.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                </div>
+
+            </div>
+        </section>
+
+        <div class="callback-block">
+            <div class="callback-block__wrapper center-block">
+                <div class="callback-block__text callback-text">
+                    <div class="callback-text__questions">Остались вопросы?</div>
+                    <div class="callback-text__answer add-font">Воспользуйтесь формой заказа обратного звонка<br>
+                        или задайте вопрос в чате нашему специалисту.<br>
+                        Мы будем рады вам помочь!</div>
+                </div>
+                <div class="callback-block__form-wrapper callback-form-wrapper">
+                    <form action="" class="callback-form-wrapper__form callback-form">
+                        <input type="tel" class="callback-form__tel" placeholder="Ваш номер телефона">
+                        <button class="callback-form__btn">Позвоните мне!</button>
+                        <br>
+                        <input type="checkbox" checked class="callback-form__checkbox" id="callback-checkbox">
+                        <label for="callback-checkbox" class="callback-form__checkbox--label callback-checkbox-label">Я
+                            согласен на обработку
+                            <a href="#" target="_blank" class="callback-checkbox-label__link">персональных данных</a>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper center-block">
+            <div class="footer__info">
+                <a class="footer__logo logo">
+                    <img src="img/logo-footer.svg" alt="Логотип" class="logo__img" width="42" height="47">
+                    <div class="logo__text logo__text--footer">Интерьер<br>
+                        Мебель</div>
+                </a>
+                <div class="footer__phone phone">
+                    <div class="phone-item phone-item--footer"><span
+                            class="phone-item__element phone-item__element--footer">8 (999) </span>123-45-67</div>
+                    <div class="phone-item phone-item--footer"><span
+                            class="phone-item__element phone-item__element--footer">8 (999) </span>123-45-67</div>
+                </div>
+                <div class="footer__mail">example@gmail.com</div>
+                <div class="footer__dev footer-dev">Разработка сайта - <span class="footer-dev__element">craftsol</span>
+                </div>
+                <div class="footer__text">Информация, представленная на сайте носит информационный характер и не
+                    является публичной офертой. Работая с этим сайтом, вы даете свое согласие на использование файлов
+                    cookie.</div>
+                <div class="footer__copyright">2005 - 2020 © Интернет-магазин "Интерьер".<br>
+                    Все права защищены.</div>
+            </div>
+            <div class="footer__nav footer-nav">
+                <div class="footer-nav__menu footer-menu footer-menu--collection">
+                    <h3 class="footer-menu__title">Коллекции мебели</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Верди</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Британия</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Мальта</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Элбург</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Милана</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Авиньон</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Паола</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия LIRONA</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия OKAERI</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Венето</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия LAURA</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Бали</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav__menu footer-menu footer-menu--catalog">
+                    <h3 class="footer-menu__title">Каталог</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Спальные комплекты</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Столы и стулья</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Комоды</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Гостинные</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Кровати</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Тумбы</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Прихожие</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Матрасы</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Кухни</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav__menu footer-menu footer-menu--user">
+                    <h3 class="footer-menu__title">Покупателям</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">О компании</a></li>
+                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">Материалы</a></li>
+                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">Доставка и оплата</a></li>
+                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
