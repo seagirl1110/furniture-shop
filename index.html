@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -38,8 +39,9 @@
         <div class="header__row header-row header-row--middle">
             <div class="header__container header-container header-container--middle">
                 <a class="header__logo logo">
-                    <img src="img/logo.svg" alt="Логотип" class="logo__img" width="42" height="47">
-                    <div class="logo__text">Интерьер<br>
+                    <img src="img/logo.svg" alt="Логотип" class="logo__img logo-img logo-img--header" width="42"
+                        height="47">
+                    <div class="logo__text logo-text logo-text--header">Интерьер<br>
                         Мебель</div>
                     <div class="logo__label add-font">Экологичная мебель из натурального дерева</div>
                 </a>
@@ -48,8 +50,8 @@
                     <img src="img/search.svg" alt="" class="search__img" width="24" height="24">
                 </form>
                 <div class="header__phone phone">
-                    <div class="phone-item"><span class="phone-item__element">8 (999) </span>123-45-67</div>
-                    <div class="phone-item"><span class="phone-item__element">8 (999) </span>123-45-67</div>
+                    <div class="phone-item phone-item--header"><span class="phone-item__element">8 (999) </span>123-45-67</div>
+                    <div class="phone-item phone-item--header"><span class="phone-item__element">8 (999) </span>123-45-67</div>
                 </div>
                 <div class="header__counter counter">
                     <a href="#" class="counter__link counter-link counter-link--heart">
@@ -63,6 +65,7 @@
                         <div class="counter__label">Корзина</div>
                     </a>
                 </div>
+                <button class="header__btn-menu"></button>
             </div>
         </div>
         <div class="header__row header-row header-row--bottom">
@@ -174,7 +177,7 @@
                     <h3 class="popular-item__label">Матрасы</h3>
                 </a>
             </div>
-            <div class="link-container">
+            <div class="link-container link-container--popular">
                 <a href="#" class="popular__link link--main-page">Перейти в каталог ></a>
             </div>
         </section>
@@ -636,19 +639,27 @@
             <div class="advantages__container center-block">
                 <div class="advantages__item advantages-item">
                     <img src="img/advantages-1000.svg" alt="" width="156" height="80" class="advantages-item__img">
-                    <div class="advantages-item__text">Ассортимент более 1000 наименований</div>
+                    <div class="advantages-item__text">Ассортимент более 1000<br>
+                        наименований
+                    </div>
                 </div>
                 <div class="advantages__item advantages-item">
                     <img src="img/advantages-seeding.svg" alt="" width="90" height="89" class="advantages-item__img">
-                    <div class="advantages-item__text">Мебель из массива безопасна и имеет долгий срок службы</div>
+                    <div class="advantages-item__text">Мебель из массива безопасна<br>
+                        и имеет долгий срок службы
+                    </div>
                 </div>
                 <div class="advantages__item advantages-item">
                     <img src="img/advantages-shield.svg" alt="" width="89" height="89" class="advantages-item__img">
-                    <div class="advantages-item__text">Гарантия от 1 года, так как уверены в качестве продукции</div>
+                    <div class="advantages-item__text">Гарантия от 1 года, так как<br>
+                        уверены в качестве продукции
+                    </div>
                 </div>
                 <div class="advantages__item advantages-item">
                     <img src="img/advantages-gear.svg" alt="" width="89" height="89" class="advantages-item__img">
-                    <div class="advantages-item__text">Выбор цвета и размера под Ваш вкус по таблице RAL</div>
+                    <div class="advantages-item__text">Выбор цвета и размера под<br>
+                        Ваш вкус по таблице RAL
+                    </div>
                 </div>
             </div>
         </section>
@@ -738,31 +749,31 @@
             </div>
         </section>
 
-        <section class="proects">
-            <div class="title-container__proects title-container">
-                <h2 class="proects__title title--main-page">Наши работы</h2>
+        <section class="projects">
+            <div class="title-container__projects title-container">
+                <h2 class="projects__title title--main-page">Наши работы</h2>
             </div>
-            <div class="proects__link-container link-container">
-                <a href="#" class="proects__link link--main-page">Все работы ></a>
+            <div class="projects__link-container link-container">
+                <a href="#" class="projects__link link--main-page">Все работы ></a>
             </div>
-            <div class="proects__wrapper">
-                <div class="proects__item proects-item">
-                    <img src="img/proects-1.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+            <div class="projects__wrapper">
+                <div class="projects__item projects-item">
+                    <img src="img/projects-1.jpg" alt="Проект" class="projects-item__img" width="240" height="239">
                 </div>
-                <div class="proects__item proects-item">
-                    <img src="img/proects-2.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                <div class="projects__item projects-item">
+                    <img src="img/projects-2.jpg" alt="Проект" class="projects-item__img" width="240" height="239">
                 </div>
-                <div class="proects__item proects-item">
-                    <img src="img/proects-3.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                <div class="projects__item projects-item">
+                    <img src="img/projects-3.jpg" alt="Проект" class="projects-item__img" width="240" height="239">
                 </div>
-                <div class="proects__item proects-item">
-                    <img src="img/proects-4.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                <div class="projects__item projects-item">
+                    <img src="img/projects-4.jpg" alt="Проект" class="projects-item__img" width="240" height="239">
                 </div>
-                <div class="proects__item proects-item">
-                    <img src="img/proects-5.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                <div class="projects__item projects-item">
+                    <img src="img/projects-5.jpg" alt="Проект" class="projects-item__img" width="240" height="239">
                 </div>
-                <div class="proects__item proects-item">
-                    <img src="img/proects-6.jpg" alt="Проект" class="proects-item__img" width="240" height="239">
+                <div class="projects__item projects-item">
+                    <img src="img/projects-6.jpg" alt="Проект" class="projects-item__img" width="240" height="239">
                 </div>
 
             </div>
@@ -772,20 +783,22 @@
             <div class="callback-block__wrapper center-block">
                 <div class="callback-block__text callback-text">
                     <div class="callback-text__questions">Остались вопросы?</div>
-                    <div class="callback-text__answer add-font">Воспользуйтесь формой заказа обратного звонка<br>
-                        или задайте вопрос в чате нашему специалисту.<br>
-                        Мы будем рады вам помочь!</div>
+                    <div class="callback-text__answer add-font">Воспользуйтесь формой заказа обратного звонка или
+                        задайте вопрос в чате нашему специалисту. Мы будем рады вам помочь!</div>
                 </div>
                 <div class="callback-block__form-wrapper callback-form-wrapper">
                     <form action="" class="callback-form-wrapper__form callback-form">
                         <input type="tel" class="callback-form__tel" placeholder="Ваш номер телефона">
                         <button class="callback-form__btn">Позвоните мне!</button>
-                        <br>
-                        <input type="checkbox" checked class="callback-form__checkbox" id="callback-checkbox">
-                        <label for="callback-checkbox" class="callback-form__checkbox--label callback-checkbox-label">Я
-                            согласен на обработку
-                            <a href="#" target="_blank" class="callback-checkbox-label__link">персональных данных</a>
-                        </label>
+                        <div class="callback-form__checkbox callback-checkbox">
+                            <label class="callback-checkbox__label callback-checkbox-label">
+                                <input type="checkbox" checked class="callback-checkbox__input">
+                                <span class="callback-checkbox__visual"></span>
+                                Я согласен на обработку
+                                <a href="#" target="_blank" class="callback-checkbox-label__link">персональных
+                                    данных</a>
+                            </label>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -794,68 +807,98 @@
 
     <footer class="footer">
         <div class="footer__wrapper center-block">
+            <div class="footer__nav footer-nav">
+                <div class="footer-nav__menu footer-menu footer-menu--collection">
+                    <h3 class="footer-menu__title">Коллекции мебели</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Верди</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Британия</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Мальта</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Элбург</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Милана</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Авиньон</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Паола</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия LIRONA</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия OKAERI</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Венето</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия LAURA</a></li>
+                        <li class="footer-menu__item footer-menu__item--collection"><a href="#"
+                                class="footer-menu__link">Серия Бали</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav__menu footer-menu footer-menu--catalog">
+                    <h3 class="footer-menu__title">Каталог</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Спальные комплекты</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Столы и стулья</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Комоды</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Гостинные</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Кровати</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Тумбы</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Прихожие</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Матрасы</a></li>
+                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#"
+                                class="footer-menu__link">Кухни</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav__menu footer-menu footer-menu--user">
+                    <h3 class="footer-menu__title">Покупателям</h3>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">О
+                                компании</a></li>
+                        <li class="footer-menu__item footer-menu__item--user"><a href="#"
+                                class="footer-menu__link">Материалы</a></li>
+                        <li class="footer-menu__item footer-menu__item--user"><a href="#"
+                                class="footer-menu__link">Доставка и оплата</a></li>
+                        <li class="footer-menu__item footer-menu__item--user"><a href="#"
+                                class="footer-menu__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="footer__info">
                 <a class="footer__logo logo">
                     <img src="img/logo-footer.svg" alt="Логотип" class="logo__img" width="42" height="47">
-                    <div class="logo__text logo__text--footer">Интерьер<br>
+                    <div class="logo__text logo-text logo-text--footer">Интерьер<br>
                         Мебель</div>
                 </a>
-                <div class="footer__phone phone">
-                    <div class="phone-item phone-item--footer"><span
-                            class="phone-item__element phone-item__element--footer">8 (999) </span>123-45-67</div>
-                    <div class="phone-item phone-item--footer"><span
-                            class="phone-item__element phone-item__element--footer">8 (999) </span>123-45-67</div>
+                <div class="footer__contacts">
+                    <div class="footer__phone phone">
+                        <div class="phone-item phone-item--footer"><span
+                                class="phone-item__element phone-item__element--footer">8 (999) </span>123-45-67</div>
+                        <div class="phone-item phone-item--footer"><span
+                                class="phone-item__element phone-item__element--footer">8 (999) </span>123-45-67</div>
+                    </div>
+                    <div class="footer__mail">example@gmail.com</div>
                 </div>
-                <div class="footer__mail">example@gmail.com</div>
-                <div class="footer__dev footer-dev">Разработка сайта - <span class="footer-dev__element">craftsol</span>
+            </div>
+            <div class="footer__add-info">
+                <div class="footer__dev footer-dev">Разработка сайта - <a href="#"
+                        class="footer-dev__element">craftsol</a>
                 </div>
                 <div class="footer__text">Информация, представленная на сайте носит информационный характер и не
                     является публичной офертой. Работая с этим сайтом, вы даете свое согласие на использование файлов
                     cookie.</div>
                 <div class="footer__copyright">2005 - 2020 © Интернет-магазин "Интерьер".<br>
                     Все права защищены.</div>
-            </div>
-            <div class="footer__nav footer-nav">
-                <div class="footer-nav__menu footer-menu footer-menu--collection">
-                    <h3 class="footer-menu__title">Коллекции мебели</h3>
-                    <ul class="footer-menu__list">
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Верди</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Британия</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Мальта</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Элбург</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Милана</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Авиньон</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Паола</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия LIRONA</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия OKAERI</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Венето</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия LAURA</a></li>
-                        <li class="footer-menu__item footer-menu__item--collection"><a href="#" class="footer-menu__link">Серия Бали</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav__menu footer-menu footer-menu--catalog">
-                    <h3 class="footer-menu__title">Каталог</h3>
-                    <ul class="footer-menu__list">
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Спальные комплекты</a></li>
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Столы и стулья</a></li>
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Комоды</a></li>
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Гостинные</a></li>
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Кровати</a></li>
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Тумбы</a></li>
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Прихожие</a></li>
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Матрасы</a></li>
-                        <li class="footer-menu__item footer-menu__item--catalog"><a href="#" class="footer-menu__link">Кухни</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav__menu footer-menu footer-menu--user">
-                    <h3 class="footer-menu__title">Покупателям</h3>
-                    <ul class="footer-menu__list">
-                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">О компании</a></li>
-                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">Материалы</a></li>
-                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">Доставка и оплата</a></li>
-                        <li class="footer-menu__item footer-menu__item--user"><a href="#" class="footer-menu__link">Контакты</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </footer>
