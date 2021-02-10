@@ -554,6 +554,7 @@ body {
 .product-modification__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .products-item:hover .products-item__modification {
@@ -584,9 +585,8 @@ body {
     margin-bottom: 8px;
 }
 
-.product-modification__price--title {
-    width: 30%;
-    max-width: 75px;
+.product-modification__price {
+    width: 38%;
 }
 
 .banner {
