@@ -17,7 +17,7 @@
         max-width: 34px;
     }
     .logo__text {
-        margin: 0 10px;
+        margin: 0 11px 0 10px;
     }
     .logo-text--header {
         font-size: 21px;
@@ -27,8 +27,9 @@
         letter-spacing: -0.01em;
         opacity: 0.7;
         max-width: 115px;
+        margin-top: 0;
     }
-    .header__logo {
+    .header__logo-wrapper {
         display: flex;
         margin-right: auto;
     }
@@ -74,10 +75,8 @@
         background-position: top 245px left 0;
     }
     .collections-block {
-        display: grid;
         gap: 20px 30px;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
     }
     .collections-item__img {
         width: 100%;
@@ -92,6 +91,7 @@
     }
     .popular-block {
         padding: 0 44px;
+        margin-bottom: -40px;
     }
     .popular-item {
         width: calc(100% / 2 - 46px);
@@ -103,7 +103,7 @@
     .products-item {
         width: calc(100% / 3 - 30px);
         padding: 16px 16px 20px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
     .products-item__name {
         font-size: 13px;
@@ -141,14 +141,8 @@
     .banner {
         margin: 0 39px 60px;
     }
-    .banner__text {
-        font-size: 23px;
-        line-height: 1.17;
-        letter-spacing: 0.5em;
-        padding: 32px 0;
-    }
     .advantages__container {
-        padding: 40px 0 0;
+        padding-top: 40px;
     }
     .advantages-item {
         width: calc(100% / 2 - 30px);
@@ -175,10 +169,12 @@
     }
     .reviews-item {
         width: calc(100% / 2 - 30px);
+        margin-bottom: 30px;
     }
     .reviews-product__img {
         float: none;
         width: auto;
+        margin: 0 auto;
     }
     .reviews-product__name {
         font-size: 16px;
@@ -240,7 +236,6 @@
         max-width: none;
     }
     .footer__logo {
-        display: flex;
         margin-right: 55px;
         flex-grow: 1;
         height: 47px;
@@ -254,4 +249,219 @@
     .footer__text {
         margin-top: 20px;
     }
+}
+
+@media all and (max-width: 767px) {
+    .center-block {
+        padding: 0 16px;
+        margin: 0 auto 50px;
+    }
+    .header-row--middle {
+        margin-bottom: 9px;
+    }
+    .header-container--middle {
+        padding: 14px 16px 0;
+    }
+    .header__logo-wrapper {
+        flex-direction: column;
+    }
+    .logo__img {
+        max-width: 28px;
+    }
+    .logo-text {
+        font-size: 17px;
+    }
+    .logo__text {
+        margin: 0 0 0 7px;
+    }
+    .logo__label {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        text-align: center;
+        color: #161616;
+        white-space: nowrap;
+        margin-top: 11px;
+        margin-left: auto;
+    }
+    .header__phone {
+        display: none;
+    }
+    .header__counter {
+        margin-bottom: 11px;
+    }
+    .header__btn-menu {
+        margin-bottom: 11px;
+    }
+    .header__search {
+        bottom: -59px;
+        width: calc(100% - 32px);
+    }
+    .header-container--bottom {
+        padding: 28px 16px;
+    }
+    .main-page {
+        background-position: top 0px left 0;
+    }
+    .slider {
+        margin: 0 auto 50px;
+    }
+    .title-container {
+        margin-bottom: 30px;
+    }
+    .collections-block {
+        gap: 8px 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collections-item__label {
+        top: 10px;
+    }
+    .collections-label {
+        font-size: 14px;
+        padding: 7px 10px 8px;
+        top: 20px;
+    }
+    .collections-label--big {
+        font-size: 22px;
+        padding: 6px 20px 7px;
+    }
+   
+
+    .popular-block {
+        padding: 0;
+        margin-bottom: -40px;
+    }
+
+    .popular-item {
+        width: calc(100% / 2 - 30px);
+        margin: 0 15px 40px;
+        height: 197px;
+    }
+
+    .callback-block__wrapper {
+        display: block;
+    }
+    .products-item {
+        width: calc(100% / 2 - 30px);
+        padding: 20px 36px 25px;
+    }
+    .products-item__name {
+        font-size: 16px;
+        line-height: 1.25;
+        margin: 20px 0 12px;
+    }
+    .products-price {
+        font-size: 22px;
+        line-height: 1.23;
+        margin: 2px 0 12px;
+    }
+    .products-price__element {
+        font-size: 22px;
+        line-height: 1.23;
+    }
+    .products-price--old {
+        font-size: 18px;
+        line-height: 1.22;
+        margin: 0;
+    }
+    .product-modification {
+        padding: 2px 48px 20px 38px;
+    }
+    .banner {
+        margin: 0 16px 60px;
+    }
+    .advantages__container {
+        padding: 50px 32px 20px;
+    }
+    .advantages-item {
+        width: 100%;
+        margin: 0 0 40px;
+    }
+    .about-us {
+        flex-direction: column;
+    }
+    .about-us__img-container {
+        margin: 0 8px 38px 0;
+        max-width: none;
+    }
+    .about-us__text-container {
+        margin-left: 0;
+        max-width: none;
+    }
+    .reviews__wrapper {
+        display: block;
+        margin: 0;
+    }
+    .reviews-item {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+    
+    .projects__wrapper {
+        flex-wrap: wrap;
+    }
+    .projects-item {
+        width: calc(100% / 3);
+        margin-top: 1px;
+    }
+    .callback-block__wrapper {
+        margin-bottom: 0;
+        padding-top: 40px;
+        padding-bottom: 90px;
+    }
+    .callback-form-wrapper__form {
+        margin-top: 30px;
+    }
+    .footer__wrapper {
+        margin-bottom: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .footer__info {
+        display: block;
+    }
+    .footer__logo {
+        height: 34px;
+    }
+    .footer-menu__item {
+        width: calc(100% / 2);
+        padding-right: 4px;
+        margin: 0 0 15px;
+    }
+}
+
+@media all and (max-width: 569px) {
+    
+    .popular-block {
+        margin: 0 0 -20px;
+        flex-direction: column;
+    }
+    .popular-item {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .popular-item__label {
+        font-size: 27px;
+        margin: 28px 0 0 22px;
+    }
+    .popular-item__img {
+        width: 203px;
+    }
+    
+    
+    
+    .products__wrapper {
+        display: block;
+        margin: 0;
+    }
+    .products__item {
+        margin: 0 0 25px;
+    }
+    .products-item {
+        width: 100%;
+    }
+
+
+
+
 }

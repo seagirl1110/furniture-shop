@@ -38,20 +38,24 @@
         </div>
         <div class="header__row header-row header-row--middle">
             <div class="header__container header-container header-container--middle">
-                <a class="header__logo logo">
-                    <img src="img/logo.svg" alt="Логотип" class="logo__img logo-img logo-img--header" width="42"
-                        height="47">
-                    <div class="logo__text logo-text logo-text--header">Интерьер<br>
-                        Мебель</div>
+                <div class="header__logo-wrapper">
+                    <a href="#" class="header__logo logo">
+                        <img src="img/logo.svg" alt="Логотип" class="logo__img logo-img logo-img--header" width="42"
+                            height="47">
+                        <div class="logo__text logo-text logo-text--header">Интерьер<br>
+                            Мебель</div>
+                    </a>
                     <div class="logo__label add-font">Экологичная мебель из натурального дерева</div>
-                </a>
+                </div>
                 <form action="" class="header__search search">
                     <input type="search" class="search__input" placeholder="Что вы ищете?">
                     <img src="img/search.svg" alt="" class="search__img" width="24" height="24">
                 </form>
                 <div class="header__phone phone">
-                    <div class="phone-item phone-item--header"><span class="phone-item__element">8 (999) </span>123-45-67</div>
-                    <div class="phone-item phone-item--header"><span class="phone-item__element">8 (999) </span>123-45-67</div>
+                    <div class="phone-item phone-item--header"><span class="phone-item__element">8 (999)
+                        </span>123-45-67</div>
+                    <div class="phone-item phone-item--header"><span class="phone-item__element">8 (999)
+                        </span>123-45-67</div>
                 </div>
                 <div class="header__counter counter">
                     <a href="#" class="counter__link counter-link counter-link--heart">
@@ -94,9 +98,11 @@
     </header>
 
     <main class="main-page">
-        <div class="slider">
-            <img src="img/slider-1.jpg" alt="Скидка 5%" class="slider__img" width="1360" height="300">
-        </div>
+
+        <picture class="slider">
+            <source media="(max-width: 767px)" srcset="img/slider-1--mobile.jpg">
+            <img src="img/slider-1.jpg" alt="Скидка 5%" class="slider__img">
+        </picture>
 
         <section class="collections center-block">
             <div class="title-container">
@@ -177,7 +183,7 @@
                     <h3 class="popular-item__label">Матрасы</h3>
                 </a>
             </div>
-            <div class="link-container link-container--popular">
+            <div class="link-container">
                 <a href="#" class="popular__link link--main-page">Перейти в каталог ></a>
             </div>
         </section>
@@ -406,10 +412,10 @@
             </div>
         </section>
 
-        <div class="banner">
-            <img alt="" class="banner__img" width="1140">
-            <p class="banner__text">Мини-баннер с новинками</p>
-        </div>
+        <picture class="banner">
+            <source media="(max-width: 569px)" srcset="img/banner--mobile.jpg">
+            <img src="img/banner.jpg" alt="Баннер с новинками>" class="banner__img">
+        </picture>
 
         <section class="products products--new center-block">
             <div class="title-container">
@@ -875,7 +881,7 @@
                 </div>
             </div>
             <div class="footer__info">
-                <a class="footer__logo logo">
+                <a href="#" class="footer__logo logo">
                     <img src="img/logo-footer.svg" alt="Логотип" class="logo__img" width="42" height="47">
                     <div class="logo__text logo-text logo-text--footer">Интерьер<br>
                         Мебель</div>
